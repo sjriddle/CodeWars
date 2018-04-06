@@ -2,7 +2,6 @@ def min_max(lst):
     a = sorted(len(b) for b in lst)
     return a[0], a[-1]
 
-
 def mxdiflg(a1, a2):
     if not a1 or not a2:
         return -1
