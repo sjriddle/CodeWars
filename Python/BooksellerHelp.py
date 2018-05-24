@@ -2,7 +2,6 @@ from collections import defaultdict
 
 OUTPUT = '({} : {})'.format
 
-
 def stock_list(books, categories):
     if not books or not categories:
         return ''
