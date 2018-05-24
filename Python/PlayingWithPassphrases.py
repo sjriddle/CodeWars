@@ -1,6 +1,5 @@
 from string import ascii_uppercase as up
 
-
 def play_pass(string, n):
     result = []
     for i, a in enumerate(string):
