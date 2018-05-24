@@ -1,6 +1,5 @@
 from itertools import combinations
 
-
 def choose_best_sum(max_miles, max_towns, lst):
     highest = 0
     for a in combinations(lst, max_towns):
