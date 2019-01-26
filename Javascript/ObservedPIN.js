@@ -1,5 +1,4 @@
 function getPINs(observed) {
-    
     var keyArr = { 
       "0": function() { return ["8", "0"]; }, 
       "1": function() { return ["1", "2", "4"]; }, 
@@ -16,24 +15,18 @@ function getPINs(observed) {
     var totalComb = observed.split("").map(function(curr) {
       return keyArr[curr]();
     });
-    
     var addValue = [];
     var buildArr = [];
     
     return totalComb.reduce(function(prevArr, currArr) {
-      
       buildArr = [];
       addValue = [];
-      
       while (prevArr.length > 0) {
-        
         addValue = prevArr.pop();
-        
         currArr.map(function(curr) {
           buildArr.push(addValue + curr);
         });
       }
       return buildArr.sort();
     });
-    
   }
